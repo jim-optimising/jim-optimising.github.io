@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jim's Turtle Shop</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Styles -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="styles.css" rel="stylesheet" type="text/css" />
+
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- import d3 library for displaying the chart -->
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+  </head>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#myPage">
+            <img
+              src="logo.png"
+              width="20"
+              height="20"
+              alt="logo"
+              class="inline-block align-middle mr-2"
+            />
+            Jim's Turtle Shop
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#rescues">RESCUES</a></li>
+            <li><a href="#stats">STATS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid bg-dark">
+      <div class="container text-white text-center">
+        <h1 class="display-4">I like Turtles!</h1>
+        <p class="lead">Welcome to my awesome page about Turtles.</p>
+        <img
+          src="ocean-turtle-03.jpg"
+          class="img-fluid"
+          alt="A turtle swimming in the ocean"
+        />
+        <p>
+          Turtle supplies and rescue is a store for all your turtle needs! We
+          carry supplies for both fresh and salt water turtles, as well as food,
+          housing, and accessories. We also have a Turtle Rescue program to help
+          sick or injured turtles.
+        </p>
+        <a class="btn btn-primary btn-lg" href="#contact" role="button"
+          >Contact Me</a
+        >
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.jumbotron -->
+
+    <!-- Container (About Section) -->
+    <div id="about" class="container-fluid">
+      <div class="row">
+        <div class="col-sm-8">
+          <h2>About Jim's</h2>
+          <br />
+          <p>
+            At Jim's we LOVE turtles! Whether you are looking for that perfect
+            pet turtle, wanting to adopt a rescue, or in need of supplies for
+            your existing buddy; we are your one-stop-shop! We have everything
+            from the tiniest of tanks to the biggest of breeding set-ups. We
+            also carry a full line of foods, both live and pellets, as well as
+            all the necessary supplements.
+          </p>
+
+          <p>
+            Our mission is to provide quality captive care for all turtles,
+            whether they are in our store or in your home. We also strongly
+            believe in turtle rescue and have many turtles available for
+            adoption.
+          </p>
+          <br /><a class="btn btn-primary btn-lg" href="#contact" role="button"
+            >Get in Touch</a
+          >
+        </div>
+        <div class="col-sm-4">
+          <img src="baby-turtle.gif" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Container (Video Section) -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe
+            class="embed-responsive-item"
+            src="https://www.youtube.com/embed/CMNry4PE93Y?rel=0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Container (Services Section) -->
+    <div id="services" class="container-fluid text-center">
+      <h2>Products & Services</h2>
+      <p>How we can help</p>
+      <br />
+      <div class="row slideanim">
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-off logo-small"></span>
+          <h4>Turtle Rescue</h4>
+          <p>
+            We have a turtle rescue program to help sick or injured turtles. We
+            also have a turtle adoption program.
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-heart logo-small"></span>
+          <h4>Custom Enclosures</h4>
+          <p>
+            We can design and build custom turtle enclosures to fit your
+            specific needs.
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-lock logo-small"></span>
+          <h4>Turtle Tanks</h4>
+          <p>
+            We have a wide selection of turtle tanks, from small to large, to
+            accommodate any size turtle.
+          </p>
+        </div>
+      </div>
+      <br /><br />
+      <div class="row slideanim">
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-leaf logo-small"></span>
+          <h4>Care Seminars</h4>
+          <p>Jim himself gives FREE seminars monthly on proper turtle care.</p>
+        </div>
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-certificate logo-small"></span>
+          <h4>Live Food</h4>
+          <p>
+            We stock live fish, crickets, and worms for your turtle to feast on.
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-wrench logo-small"></span>
+          <h4>Accessories</h4>
+          <p>
+            We carry a variety of turtle accessories, including basking docks,
+            filter systems, and more.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Container (Rescues Section) -->
+    <div id="rescues" class="container-fluid text-center bg-grey">
+      <h2>Rescues</h2>
+      <br />
+      <h4>Latest turtles and tortoises that we've help rescue.</h4>
+      <div class="row text-center slideanim">
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <img src="ocean-turtle-04.jpg" alt="Tina, Tess, and Tiffany" />
+            <p><strong>Tina, Tess, and Tiffany</strong></p>
+            <p>3 cute baby tortoises</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <img src="ocean-turtle-01.jpg" alt="Tim" />
+            <p><strong>Tim</strong></p>
+            <p>An older one who ate a plastic straw.</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <img src="ocean-turtle-02.jpg" alt="Tate" />
+            <p><strong>Tate</strong></p>
+            <p>A strong swimmer who had a sore flipper.</p>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <h2>What our customers say</h2>
+      <div
+        id="myCarousel"
+        class="carousel slide text-center"
+        data-ride="carousel"
+      >
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <h4>
+              "My pet turtle died."<br /><span
+                >I’m not upset, just shell-shocked!</span
+              >
+            </h4>
+          </div>
+          <div class="item">
+            <h4>
+              "Where does a turtle go when it’s raining?"<br /><span>
+                A shell-ter.</span
+              >
+            </h4>
+          </div>
+          <div class="item">
+            <h4>
+              "My friend and I went to a turtle pun class yesterday. "<br /><span
+                >It tortoise nothing.</span
+              >
+            </h4>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a
+          class="left carousel-control"
+          href="#myCarousel"
+          role="button"
+          data-slide="prev"
+        >
+          <span
+            class="glyphicon glyphicon-chevron-left"
+            aria-hidden="true"
+          ></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="right carousel-control"
+          href="#myCarousel"
+          role="button"
+          data-slide="next"
+        >
+          <span
+            class="glyphicon glyphicon-chevron-right"
+            aria-hidden="true"
+          ></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Container (Stats Section) -->
+    <div id="stats" class="container-fluid">
+      <div class="text-center">
+        <h2>Stats</h2>
+        <p>Number of Turtles Rescued</p>
+      </div>
+      <div class="row slideanim">
+        <!-- svg chart goes here-->
+        <div id="graphic"></div>
+      </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div id="contact" class="container-fluid bg-grey">
+      <h2 class="text-center">CONTACT</h2>
+      <div class="row">
+        <div class="col-sm-5">
+          <p>Contact us and we'll get back to you within 24 hours.</p>
+          <p>
+            <span class="glyphicon glyphicon-map-marker"></span> Melbourne,
+            Australia
+          </p>
+          <p><span class="glyphicon glyphicon-phone"></span> +61 412 345 678</p>
+          <p>
+            <span class="glyphicon glyphicon-envelope"></span>
+            jim@turtlerescue.org.au
+          </p>
+          <!--   facebook share widget -->
+          <div id="fb-root"></div>
+          <script
+            async
+            defer
+            crossorigin="anonymous"
+            src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=1042987515879761&autoLogAppEvents=1"
+          ></script>
+          <div
+            class="fb-share-button"
+            data-href="https://www.facebook.com/googlechrome/"
+            data-layout="button_count"
+            data-size="small"
+          >
+            <a
+              target="_blank"
+              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fgoldblumofficial%2F&amp;src=sdkpreparse"
+              class="fb-xfbml-parse-ignore"
+              >Share</a
+            >
+          </div>
+        </div>
+        <div class="col-sm-7 slideanim">
+          <div class="row">
+            <div class="col-sm-6 form-group">
+              <input
+                class="form-control"
+                id="name"
+                name="name"
+                placeholder="Name"
+                type="text"
+                required
+              />
+            </div>
+            <div class="col-sm-6 form-group">
+              <input
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Email"
+                type="email"
+                required
+              />
+            </div>
+          </div>
+          <textarea
+            class="form-control"
+            id="comments"
+            name="comments"
+            placeholder="Comment"
+            rows="5"
+          ></textarea
+          ><br />
+          <div class="row">
+            <div class="col-sm-12 form-group">
+              <button class="btn btn-primary pull-right" type="submit">
+                Send
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+      <a href="#myPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+        <p>Back to top</p>
+      </a>
+    </footer>
+
+    <script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 900, function(){
+
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+
+        $(window).scroll(function() {
+          $(".slideanim").each(function(){
+            var pos = $(this).offset().top;
+
+            var winTop = $(window).scrollTop();
+              if (pos < winTop + 600) {
+                $(this).addClass("slide");
+              }
+          });
+        });
+      })
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
